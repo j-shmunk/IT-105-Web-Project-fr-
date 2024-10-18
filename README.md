@@ -1,35 +1,129 @@
-# Dolphins and shi
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All About Dolphins</title>
+    <title>Landing Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #e0f7fa;
+            background-color: #f4f4f4;
             margin: 0;
-            padding: 20px;
+            padding: 0;
         }
-        h1 {
-            color: #00796b;
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 1rem;
+            text-align: center;
         }
-        p {
-            color: #004d40;
+        nav {
+            text-align: center;
+            margin: 1rem 0;
         }
-        .dolphin-image {
-            max-width: 100%;
-            height: auto;
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: #007bff;
+        }
+        .main-content {
+            text-align: center;
+            padding: 2rem;
+        }
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
-    <h1>All About Dolphins</h1>
-    <img src="https://example.com/dolphin.jpg" alt="A beautiful dolphin" class="dolphin-image">
-    <p>Dolphins are highly intelligent marine mammals that are part of the toothed whale family, which also includes orcas and pilot whales. They are found worldwide, mostly in shallow seas of the continental shelves, and are carnivores, mostly eating fish and squid.</p>
-    <h2>Interesting Facts About Dolphins</h2>
-    <ul>
-        <li>Dolphins are known for their agility and playful behavior, making them a favorite of wildlife watchers.</li>
-        <li>They are remarkably intelligent and have been known to use tools and exhibit complex social structures.</li>
-        <li>Dolphins communicate with each other using a variety of clicks, whistle-like sounds, and other vocalizations
+    <header>
+        <h1>Welcome to Our Company</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="main-content">
+        <h2>Your Partner in Success</h2>
+        <p>Discover more about what we offer and how we can help you achieve your goals.</p>
+    </div>
+    <footer>
+        <p>&copy; 2024 Our Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin: 1rem 0;
+        }
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: #007bff;
+        }
+        .about-content {
+            padding: 2rem;
+            text-align: center;
+        }
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Our Company</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="about-content">
+        <h2>Who We Are</h2>
+        <p>We are a dedicated team of professionals committed to delivering top-notch services and solutions to our clients.</p>
+        <h3>Our Mission</h3>
+        <p>To empower businesses by providing innovative and tailored solutions that drive success and growth.</p>
+        <h3>Our Values</h3>
+        <p>Integrity, Excellence, and Collaboration.</p>
+    </div>
+    <footer>
+        <p>&copy; 2024 Our Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>
