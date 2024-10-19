@@ -39,12 +39,16 @@
         }
     </style>
 </head>
+<nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+    </nav>
 <body>
     <header>
         <h1>Caffeinated Climbing</h1>
     </header>
     <section>
-        <h2>Welcome to Caffeinated Climbing</h2>
+        <h2>Welcome to Caffeinated Climbing, where the climbing gets easier!</h2>
         <p>Your ultimate adventure guide service specializing in Backpacking, Climbing, and Land Navigation - Orienteering.
         Bacon ipsum dolor amet salami tri-tip pig landjaeger shankle pork shank swine. Cupim fatback short ribs chislic porchetta pancetta. Salami landjaeger fatback kielbasa shankle chicken chuck beef ribs tri-tip alcatra rump swine pork chop. Bresaola meatloaf turducken, cow pork loin andouille pastrami short loin ground round shank beef tongue. Tail burgdoggen rump porchetta flank tri-tip andouille doner.
 
@@ -55,16 +59,6 @@ Doner shank turducken hamburger beef ribs short loin brisket beef. Kielbasa cupi
 Hamburger swine doner tail kevin ribeye ground round. Meatball tri-tip biltong, kevin beef bresaola ball tip jerky. Salami cupim venison tongue, jerky swine turducken jowl alcatra short ribs pig. Meatloaf shoulder flank, ham tail tri-tip shankle tenderloin meatball porchetta ham hock. Capicola tri-tip short ribs turkey ham hock pork. Ham pork loin kevin cow pork doner. Cow tail pastrami sausage landjaeger alcatra ball tip tongue ribeye jowl boudin kielbasa picanha shankle tri-tip.
 
 Frankfurter chicken biltong, burgdoggen pig boudin ball tip. Tail ball tip tenderloin shank, short loin pork chop boudin leberkas pancetta. Pork chop t-bone short loin corned beef tenderloin brisket, sirloin ham. Shoulder pork chop bacon bresaola, ground round hamburger ham hock boudin jerky pancetta ball tip. Pancetta shoulder jowl, pastrami frankfurter porchetta cupim. Rump pancetta short ribs fatback tri-tip tongue salami strip steak corned beef ham hock flank leberkas beef ribs drumstick. Landjaeger ribeye cow ham hock doner buffalo.</p>
-    </section>
-    <section class="about">
-        <h2>About Us</h2>
-        <p>Caffeinated Climbing was born out of a love for adventure and the great outdoors. Our team of seasoned guides is dedicated to providing you with the most exhilarating and safe experiences, whether you’re a novice or a seasoned adventurer. Bacon ipsum dolor amet burgdoggen cupim turducken boudin. Pig strip steak corned beef, beef sirloin capicola flank buffalo kevin leberkas filet mignon jowl chislic. Burgdoggen brisket short loin, cow sirloin capicola kielbasa turducken beef ribs tenderloin shank ribeye pork chop. Short ribs tongue filet mignon, corned beef ham hock cow jerky pig. Pig ham ham hock flank frankfurter, filet mignon pork loin short loin jerky doner chislic leberkas beef. Corned beef kevin pork loin, turducken bresaola spare ribs tail shoulder pork chop. Brisket turkey pork belly, tenderloin hamburger porchetta andouille bresaola.
-
-Buffalo tenderloin pork pancetta shoulder burgdoggen tri-tip pork loin. Bresaola salami flank, short ribs drumstick sirloin capicola hamburger pork belly shank filet mignon doner. Meatloaf beef ribs ribeye, kielbasa tail kevin ground round andouille boudin swine strip steak ball tip ham hamburger. Tongue pastrami tail landjaeger strip steak chuck leberkas ham hock venison alcatra prosciutto ground round pork belly. Frankfurter tail chicken, rump buffalo porchetta pork loin t-bone prosciutto short loin.
-
-Swine strip steak pork loin pastrami andouille kevin ham doner, filet mignon short loin ball tip pork alcatra. Tongue short loin sausage spare ribs chicken shoulder leberkas rump sirloin doner pork pastrami shankle fatback. Biltong pork frankfurter swine meatloaf chislic burgdoggen beef ribs tail. Ham hock cow pork chuck t-bone prosciutto hamburger. Meatloaf andouille buffalo ball tip kevin, cow drumstick. Meatball venison shankle ground round turducken flank. Beef cupim frankfurter jowl ribeye.
-
-Cow shankle chicken tenderloin tri-tip. Ground round drumstick salami brisket. Tri-tip bacon jowl porchetta prosciutto drumstick chuck landjaeger pig burgdoggen biltong. Sausage sirloin frankfurter shoulder. Tenderloin filet mignon jerky pork chop, ham hock doner kielbasa spare ribs brisket capicola biltong cupim andouille pastrami strip steak.</p>
     </section>
     <section>
         <h2>Our Schedule</h2>
