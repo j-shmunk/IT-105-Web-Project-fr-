@@ -2,128 +2,154 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Caffeinated Climbing</title>
     <style>
         body {
+            background-color: burlywood;
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            color: white;
             margin: 0;
-            padding: 0;
         }
         header {
-            background-color: #007bff;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
-        nav {
-            text-align: center;
-            margin: 1rem 0;
-        }
-        nav a {
-            margin: 0 1rem;
-            text-decoration: none;
-            color: #007bff;
-        }
-        .main-content {
             text-align: center;
             padding: 2rem;
+            background-color: #333;
         }
-        footer {
-            background-color: #007bff;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            position: fixed;
-            bottom: 0;
+        h1 {
+            margin: 0;
+        }
+        section {
+            padding: 2rem;
+        }
+        .about {
+            background-color: #444;
+        }
+        table {
             width: 100%;
+            margin: 2rem 0;
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 1px solid white;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #333;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Our Company</h1>
+        <h1>Caffeinated Climbing</h1>
     </header>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About Us</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <div class="main-content">
-        <h2>Your Partner in Success</h2>
-        <p>Discover more about what we offer and how we can help you achieve your goals.</p>
-    </div>
-    <footer>
-        <p>&copy; 2024 Our Company. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+    <section>
+        <h2>Welcome to Caffeinated Climbing</h2>
+        <p>Your ultimate adventure guide service specializing in Backpacking, Climbing, and Land Navigation - Orienteering.
+        Bacon ipsum dolor amet salami tri-tip pig landjaeger shankle pork shank swine. Cupim fatback short ribs chislic porchetta pancetta. Salami landjaeger fatback kielbasa shankle chicken chuck beef ribs tri-tip alcatra rump swine pork chop. Bresaola meatloaf turducken, cow pork loin andouille pastrami short loin ground round shank beef tongue. Tail burgdoggen rump porchetta flank tri-tip andouille doner.
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #007bff;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
-        nav {
-            text-align: center;
-            margin: 1rem 0;
-        }
-        nav a {
-            margin: 0 1rem;
-            text-decoration: none;
-            color: #007bff;
-        }
-        .about-content {
-            padding: 2rem;
-            text-align: center;
-        }
-        footer {
-            background-color: #007bff;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>About Our Company</h1>
-    </header>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About Us</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <div class="about-content">
-        <h2>Who We Are</h2>
-        <p>We are a dedicated team of professionals committed to delivering top-notch services and solutions to our clients.</p>
-        <h3>Our Mission</h3>
-        <p>To empower businesses by providing innovative and tailored solutions that drive success and growth.</p>
-        <h3>Our Values</h3>
-        <p>Integrity, Excellence, and Collaboration.</p>
-    </div>
-    <footer>
-        <p>&copy; 2024 Our Company. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+Tenderloin picanha capicola, salami pig corned beef prosciutto ham tail cupim andouille sirloin. Capicola fatback chislic tri-tip, tongue turducken pastrami prosciutto pork chop. Salami t-bone rump filet mignon, beef ribs porchetta bacon brisket alcatra buffalo prosciutto flank picanha shank chislic. Capicola filet mignon strip steak, bacon biltong kevin pig beef ribs picanha chislic ham hock tri-tip flank meatloaf.
+
+Doner shank turducken hamburger beef ribs short loin brisket beef. Kielbasa cupim corned beef landjaeger frankfurter prosciutto. Spare ribs pork belly bresaola, alcatra salami kielbasa chicken venison fatback kevin ball tip. Flank chuck bacon kielbasa. Buffalo spare ribs pig t-bone, pork belly tail chislic turkey cupim brisket pork alcatra burgdoggen shoulder fatback. Drumstick sausage brisket, pork chop flank sirloin filet mignon bresaola buffalo venison. Cow swine landjaeger short loin, strip steak cupim ground round pork filet mignon turkey pig pork belly picanha.
+
+Hamburger swine doner tail kevin ribeye ground round. Meatball tri-tip biltong, kevin beef bresaola ball tip jerky. Salami cupim venison tongue, jerky swine turducken jowl alcatra short ribs pig. Meatloaf shoulder flank, ham tail tri-tip shankle tenderloin meatball porchetta ham hock. Capicola tri-tip short ribs turkey ham hock pork. Ham pork loin kevin cow pork doner. Cow tail pastrami sausage landjaeger alcatra ball tip tongue ribeye jowl boudin kielbasa picanha shankle tri-tip.
+
+Frankfurter chicken biltong, burgdoggen pig boudin ball tip. Tail ball tip tenderloin shank, short loin pork chop boudin leberkas pancetta. Pork chop t-bone short loin corned beef tenderloin brisket, sirloin ham. Shoulder pork chop bacon bresaola, ground round hamburger ham hock boudin jerky pancetta ball tip. Pancetta shoulder jowl, pastrami frankfurter porchetta cupim. Rump pancetta short ribs fatback tri-tip tongue salami strip steak corned beef ham hock flank leberkas beef ribs drumstick. Landjaeger ribeye cow ham hock doner buffalo.</p>
+    </section>
+    <section class="about">
+        <h2>About Us</h2>
+        <p>Caffeinated Climbing was born out of a love for adventure and the great outdoors. Our team of seasoned guides is dedicated to providing you with the most exhilarating and safe experiences, whether you’re a novice or a seasoned adventurer. Bacon ipsum dolor amet burgdoggen cupim turducken boudin. Pig strip steak corned beef, beef sirloin capicola flank buffalo kevin leberkas filet mignon jowl chislic. Burgdoggen brisket short loin, cow sirloin capicola kielbasa turducken beef ribs tenderloin shank ribeye pork chop. Short ribs tongue filet mignon, corned beef ham hock cow jerky pig. Pig ham ham hock flank frankfurter, filet mignon pork loin short loin jerky doner chislic leberkas beef. Corned beef kevin pork loin, turducken bresaola spare ribs tail shoulder pork chop. Brisket turkey pork belly, tenderloin hamburger porchetta andouille bresaola.
+
+Buffalo tenderloin pork pancetta shoulder burgdoggen tri-tip pork loin. Bresaola salami flank, short ribs drumstick sirloin capicola hamburger pork belly shank filet mignon doner. Meatloaf beef ribs ribeye, kielbasa tail kevin ground round andouille boudin swine strip steak ball tip ham hamburger. Tongue pastrami tail landjaeger strip steak chuck leberkas ham hock venison alcatra prosciutto ground round pork belly. Frankfurter tail chicken, rump buffalo porchetta pork loin t-bone prosciutto short loin.
+
+Swine strip steak pork loin pastrami andouille kevin ham doner, filet mignon short loin ball tip pork alcatra. Tongue short loin sausage spare ribs chicken shoulder leberkas rump sirloin doner pork pastrami shankle fatback. Biltong pork frankfurter swine meatloaf chislic burgdoggen beef ribs tail. Ham hock cow pork chuck t-bone prosciutto hamburger. Meatloaf andouille buffalo ball tip kevin, cow drumstick. Meatball venison shankle ground round turducken flank. Beef cupim frankfurter jowl ribeye.
+
+Cow shankle chicken tenderloin tri-tip. Ground round drumstick salami brisket. Tri-tip bacon jowl porchetta prosciutto drumstick chuck landjaeger pig burgdoggen biltong. Sausage sirloin frankfurter shoulder. Tenderloin filet mignon jerky pork chop, ham hock doner kielbasa spare ribs brisket capicola biltong cupim andouille pastrami strip steak.</p>
+    </section>
+    <section>
+        <h2>Our Schedule</h2>
+        <table cellpadding="10" border="1">
+            <tbody>
+                <tr>
+                    <td>SRVID</td>
+                    <td>Service</td>
+                    <td>Description</td>
+                    <td>Duration</td>
+                    <td>Cost</td>
+                    <td>Departs</td>
+                    <td>Details</td>
+                </tr>
+                <tr>
+                    <td>SRV-01</td>
+                    <td>Backpacking</td>
+                    <td>Weekend Backpacking Trip</td>
+                    <td>3 days</td>
+                    <td>$750.00</td>
+                    <td>Fri - Noon - Returns Sun</td>
+                    <td>Backpacking trip from Mapleton Depot to the Martins Gap via the Standing Stone Trail. Includes all meals.</td>
+                </tr>
+                <tr>
+                    <td>SRV-02</td>
+                    <td>Backpacking</td>
+                    <td>Week - Backpacking Trip</td>
+                    <td>7 days</td>
+                    <td>$1400.00</td>
+                    <td>Sunday - Return Saturday</td>
+                    <td>5 day backpacking trip from Cowans Gap State Park to Greenwood Furnace State Park via the Standing Stone Trail. Includes all meals.</td>
+                </tr>
+                <tr>
+                    <td>SRV-03</td>
+                    <td>Backpacking</td>
+                    <td>Backpacking Trek</td>
+                    <td>14 days</td>
+                    <td>$2800.00</td>
+                    <td>Sunday - Return Saturday</td>
+                    <td>14 day backpacking trip from Michaux State Forest, PA to Cascade, MD</td>
+                </tr>
+                <tr>
+                    <td>SRV-04</td>
+                    <td>Climbing</td>
+                    <td>Bouldering</td>
+                    <td>1 day</td>
+                    <td>$200.00</td>
+                    <td>5 hours</td>
+                    <td>Pulpit Rocks, Huntingdon 1 PM - 6 PM</td>
+                </tr>
+                <tr>
+                    <td>SRV-05</td>
+                    <td>Climbing</td>
+                    <td>Top-Roping Day</td>
+                    <td>1 day</td>
+                    <td>$400.00</td>
+                    <td>8 hours</td>
+                    <td>9 AM - 5 PM</td>
+                </tr>
+                <tr>
+                    <td>SRV-06</td>
+                    <td>Climbing</td>
+                    <td>Top-Roping - Belaying</td>
+                    <td>3 days</td>
+                    <td>$1200.00</td>
+                    <td>8 hours per day</td>
+                    <td>9 AM - 5 PM</td>
+                </tr>
+                <tr>
+                    <td>SRV-07</td>
+                    <td>Climbing</td>
+                    <td>Rappelling - Self Rescue</td>
+                    <td>2 days</td>
+                    <td>$800.00</td>
+                    <td>16 hours total</td>
+                    <td>9 AM - 5 PM</td>
+                </tr>
+                <tr>
+                    <td>SRV-08</td>
+                    <td>Climbing</td>
+                    <td>Lead Climbing</td>
+                    <td>2 days</td>
+                    <td>$1200.00</td>
+                    <td>16 hours total</td>
+                    <td>9 AM - 5 PM</td>
+                </tr>
+                <tr>
+                    <td>SRV-09</td>
