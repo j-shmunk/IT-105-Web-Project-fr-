@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us - Caffeinated Climbing</title>
+    <style>
+        body {
+            background-color: burlywood;
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+        }
+        header {
+            text-align: center;
+            padding: 2rem;
+            background-color: #333;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            padding: 2rem;
+        }
+        nav {
+            text-align: center;
+            margin: 1rem 0;
+        }
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: white;
+        }
+        .about {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Us - Caffeinated Climbing</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+    </nav>
+    <section class="about">
+        <h2>About Us</h2>
+        <p>Caffeinated Climbing was born out of a love for adventure and the great outdoors. Our team of seasoned guides is dedicated to providing you with the most exhilarating and safe experiences, whether you’re a novice or a seasoned adventurer.</p>
+    </section>
+</body>
+</html>
