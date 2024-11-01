@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schedule>
+    <services>
+        <SRVID>SRV-01</SRVID>
+        <Service>Backpacking</Service>
+        <Description>Weekend Backpacking Trip</Description>
+        <Duration>3 days</Duration>
+        <Cost>$750.00</Cost>
+        <Departs>Fri - Noon - Returns Sun</Departs>
+        <Details>Backpacking trip from Mapleton Depot to the Martins Gap via the Standing Stone Trail. Includes all meals.</Details>
+    </services>
+    <services>
+        <SRVID>SRV-02</SRVID>
+        <Service>Backpacking</Service>
+        <Description>Week - Backpacking Trip</Description>
+        <Duration>7 days</Duration>
+        <Cost>$1400.00</Cost>
+        <Departs>Sunday - Return Saturday</Departs>
+        <Details>5 day backpacking trip from Cowans Gap State Park to Greenwood Furnace State Park via the Standing Stone Trail. Includes all meals.</Details>
+    </services>
+    <services>
+        <SRVID>SRV-03</SRVID>
+        <Service>Backpacking</Service>
+        <Description>Backpacking Trek</Description>
+        <Duration>14 days</Duration>
+        <Cost>$2800.00</Cost>
+        <Departs>Sunday - Return Saturday</Departs>
+        <Details>14 day backpacking trip from Michaux State Forest, PA to Cascade, MD</Details>
+    </services>
+    <services>
+        <SRVID>SRV-04</SRVID>
+        <Service>Climbing</Service>
+        <Description>Bouldering</Description>
+        <Duration>1 day</Duration>
+        <Cost>$200.00</Cost>
+        <Departs>5 hours</Departs>
+        <Details>Pulpit Rocks, Huntingdon 1 PM - 6 PM</Details>
+    </services>
+    <services>
+        <SRVID>SRV-05</SRVID>
+        <Service>Climbing</Service>
+        <Description>Top-Roping Day</Description>
+        <Duration>1 day</Duration>
+        <Cost>$400.00</Cost>
+        <Departs>8 hours</Departs>
+        <Details>9 AM - 5 PM</Details>
+    </services>
+    <services>
+        <SRVID>SRV-06</SRVID>
+        <Service>Climbing</Service>
+        <Description>Top-Roping - Belaying</Description>
+        <Duration>3 days</Duration>
+        <Cost>$1200.00</Cost>
+        <Departs>8 hours per day</Departs>
+        <Details>9 AM - 5 PM</Details>
+    </services>
+    <services>
+        <SRVID>SRV-07</SRVID>
+        <Service>Climbing</Service>
+        <Description>Rappelling - Self Rescue</Description>
+        <Duration>2 days</Duration>
+        <Cost>$800.00</Cost>
+        <Departs>16 hours total</Departs>
+        <Details>9 AM - 5 PM</Details>
+    </services>
+    <services>
+        <SRVID>SRV-08</SRVID>
+        <Service>Climbing</Service>
+        <Description>Lead Climbing</Description>
+        <Duration>2 days</Duration>
+        <Cost>$1200.00</Cost>
+        <Departs>16 hours total</Departs>
+        <Details>9 AM - 5 PM</Details>
+    </services>
+</schedule>
