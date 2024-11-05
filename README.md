@@ -42,6 +42,7 @@
 <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
+        <a href="Services.html">Services</a>
     </nav>
 <body>
     <header>
