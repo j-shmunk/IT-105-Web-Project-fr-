@@ -43,6 +43,8 @@
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
         <a href="Services.html">Services</a>
+        <a href="Customer.html">Customer Reviews</a>
+
     </nav>
 <body>
     <header>
