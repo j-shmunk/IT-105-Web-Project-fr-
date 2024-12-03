@@ -44,6 +44,8 @@
         <a href="about.html">About Us</a>
         <a href="Services.html">Services</a>
         <a href="Customer.html">Customer Reviews</a>
+        <a href="catalog.html">Store Catalog</a>
+
 
     </nav>
 <body>
