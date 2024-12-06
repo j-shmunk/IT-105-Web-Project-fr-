@@ -6,32 +6,105 @@
     <title>Company Store Catalog</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
+        body {
+            background-color: burlywood;
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+        }
+        header {
+            text-align: center;
+            padding: 2rem;
+            background-color: #333;
+        }
+        h1 {
+            margin: 0;
+        }
         .catalog-container {
             margin-top: 50px;
         }
         .product-card {
             margin-bottom: 20px;
         }
+        .row div {
+            padding: 0.5rem;
+            border: 1px solid white;
+        }
+        .row {
+            margin-bottom: 0.5rem;
+        }
+        nav {
+            background-color: #333;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .card {
+            background-color: #444;
+            border: 1px solid white;
+            color: white;
+        }
+        .card img {
+            border-bottom: 1px solid white;
+        }
     </style>
+</head>
+<body>
+    <header>
+        <h1>Company Store Catalog</h1>
+    </header>
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
-        <a href="Services.html">Services</a>
-        <a href="Customer.html">Customer Reviews</a>
+        <a href="services.html">Services</a>
+        <a href="customer.html">Customer Reviews</a>
         <a href="catalog.html">Store Catalog</a>
-
     </nav>
-</head>
-<body>
     <div class="container catalog-container">
-        <h1 class="text-center">Company Store Catalog</h1>
         <div class="row" id="catalog">
             <!-- Products will be inserted here dynamically -->
         </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="catalog.js"></script>
+    <script>
+        const products = [
+            {"gear_manu":"Petzl","gear_name":"Omni Locking Carabiner, Screw-Lock","gear_cost":"23.95"},
+            {"gear_manu":"Petzl","gear_name":"AmD Screw Lock Carabiner","gear_cost":"18.95"},
+            {"gear_manu":"Petzl","gear_name":"Attache","gear_cost":"19.00"},
+            {"gear_manu":"Petzl","gear_name":"SmD Twist-Lock Autolock Carabiner","gear_cost":"22.95"},
+            {"gear_manu":"Black Diamond","gear_name":"RockLock TwistLock - Gray","gear_cost":"22.95"},
+            {"gear_manu":"Black Diamond","gear_name":"Hotforge Screwgate 3 Pack","gear_cost":"34.95"},
+            {"gear_manu":"Black Diamond","gear_name":"Hotforge Screwgate","gear_cost":"12.95"},
+            {"gear_manu":"Black Diamond","gear_name":"Camalot C4 2nds - Size .75","gear_cost":"$63.96"}
+        ];
+
+        function displayProducts() {
+            const catalog = document.getElementById('catalog');
+            products.forEach(product => {
+                const productCard = `
+                    <div class="col-md-4">
+                        <div class="card product-card">
+                            <div class="card-body">
+                                <h5 class="card-title">${product.gear_manu}</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">${product.gear_name}</h6>
+                                <p class="card-text"><strong>Cost:</strong> ${product.gear_cost}</p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                catalog.innerHTML += productCard;
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', displayProducts);
+    </script>
 </body>
 </html>
-
