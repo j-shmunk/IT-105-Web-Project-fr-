@@ -42,7 +42,6 @@
     </nav>
 
     <div class="container">
-        <!-- Inserted Table Starts Here -->
         <table id="schedule-table" class="table table-striped table-dark mt-4">
             <thead>
                 <tr>
@@ -157,12 +156,10 @@
                 </tr>
             </tbody>
         </table>
-        <!-- Inserted Table Ends Here -->
     </div>
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            // Extract XML data from script tag
             var xmlData = document.getElementById("services-xml").textContent;
 
             var parser = new DOMParser();
