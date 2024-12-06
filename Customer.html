@@ -95,6 +95,8 @@
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
+
+        <div id="results" class="mt-4"></div>
     </div>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -105,7 +107,7 @@
             {
                 "adventurename":"Seneca Rocks",
                 "adventuredate":"July 14, 2024",
-                "adventurephoto":"https://github.com/j-shmunk/IT-105-Web-Project-fr-/blob/main/seneca.png",
+                "adventurephoto":"https://raw.githubusercontent.com/j-shmunk/IT-105-Web-Project-fr-/main/seneca.png",
                 "customername":"Denver",
                 "customerquote":"Amazing",
                 "excurstionstmt":"Very cool",
@@ -114,7 +116,7 @@
             {
                 "adventurename":"Red River Gorge",
                 "adventuredate":"June 14, 2023",
-                "adventurephoto":"https://github.com/j-shmunk/IT-105-Web-Project-fr-/blob/main/rrg.png",
+                "adventurephoto":"https://raw.githubusercontent.com/j-shmunk/IT-105-Web-Project-fr-/main/rrg.png",
                 "customername":"Marie",
                 "customerquote":"Fantastic",
                 "excurstionstmt":"Beautiful trip",
@@ -123,7 +125,7 @@
             {
                 "adventurename":"New River Gorge",
                 "adventuredate":"August 14, 2024",
-                "adventurephoto":"https://github.com/j-shmunk/IT-105-Web-Project-fr-/blob/main/newriver.png",
+                "adventurephoto":"https://raw.githubusercontent.com/j-shmunk/IT-105-Web-Project-fr-/main/newriver.png",
                 "customername":"Jon",
                 "customerquote":"Righteous",
                 "excurstionstmt":"Wild and Wonderful",
@@ -132,7 +134,7 @@
             {
                 "adventurename":"Shawangunk",
                 "adventuredate":"September 14, 2024",
-                "adventurephoto":"https://github.com/j-shmunk/IT-105-Web-Project-fr-/blob/main/gunks.png",
+                "adventurephoto":"https://raw.githubusercontent.com/j-shmunk/IT-105-Web-Project-fr-/main/gunks.png",
                 "customername":"Frank",
                 "customerquote":"Whoa",
                 "excurstionstmt":"Epic trip",
@@ -180,9 +182,10 @@
             document.getElementById('results').innerHTML = result;
         }
 
-        document.addEventListener('DOMContentLoaded', displayCustomerCards);
-
-        document.getElementById('feedback-form').addEventListener('submit', handleFormSubmission);
+        document.addEventListener('DOMContentLoaded', () => {
+            displayCustomerCards();
+            document.getElementById('feedback-form').addEventListener('submit', handleFormSubmission);
+        });
     </script>
 </body>
 </html>
