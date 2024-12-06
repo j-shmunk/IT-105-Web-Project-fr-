@@ -1,34 +1,233 @@
-<!doctype html>
+    <!doctype html>
 <html lang="en">
 <head>
     <title>Service Schedule</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: burlywood;
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+        }
+        header {
+            text-align: center;
+            padding: 2rem;
+            background-color: #333;
+        }
+        h1 {
+            margin: 0;
+        }
+        table {
+            width: 90%;
+            margin: 2rem auto;
+            border-collapse: collapse;
+            background-color: #444;
+            border: 1px solid white;
+            color: white;
+        }
+        th, td {
+            padding: 1rem;
+            border: 1px solid white;
+            text-align: center;
+        }
+        th {
+            background-color: #333;
+        }
+    </style>
 </head>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="Services.html">Services</a>
-        <a href="Customer.html">Customer Reviews</a>
-        <a href="catalog.html">Store Catalog</a>
-    </nav>
-<body onload="loadDoc()"> 
+<body>
+    <header>
+        <h1>Service Schedule</h1>
+    </header>
+
+    <table id="schedule-table">
+        <thead>
+            <tr>
+                <th>SRVID</th>
+                <th>Service</th>
+                <th>Description</th>
+                <th>Duration</th>
+                <th>Cost</th>
+                <th>Departs</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                    <td>SRVID</td>
+                    <td>Service</td>
+                    <td>Description</td>
+                    <td>Duration</td>
+                    <td>Cost</td>
+                    <td>Departs</td>
+                    <td>Details</td>
+                </tr>
+                <tr>
+                    <td>SRV-01</td>
+                    <td>Backpacking</td>
+                    <td>Weekend Backpacking Trip</td>
+                    <td>3 days</td>
+                    <td>$750.00</td>
+                    <td>Fri - Noon - Returns Sun</td>
+                    <td>Backpacking trip from Mapleton Depot to the Martins Gap via the Standing Stone Trail. Includes all meals.</td>
+                </tr>
+                <tr>
+                    <td>SRV-02</td>
+                    <td>Backpacking</td>
+                    <td>Week - Backpacking Trip</td>
+                    <td>7 days</td>
+                    <td>$1400.00</td>
+                    <td>Sunday - Return Saturday</td>
+                    <td>5 day backpacking trip from Cowans Gap State Park to Greenwood Furnace State Park via the Standing Stone Trail. Includes all meals.</td>
+                </tr>
+                <tr>
+                    <td>SRV-03</td>
+                    <td>Backpacking</td>
+                    <td>Backpacking Trek</td>
+                    <td>14 days</td>
+                    <td>$2800.00</td>
+                    <td>Sunday - Return Saturday</td>
+                    <td>14 day backpacking trip from Michaux State Forest, PA to Cascade, MD</td>
+                </tr>
+                <tr>
+                    <td>SRV-04</td>
+                    <td>Climbing</td>
+                    <td>Bouldering</td>
+                    <td>1 day</td>
+                    <td>$200.00</td>
+                    <td>5 hours</td>
+                    <td>Pulpit Rocks, Huntingdon 1 PM - 6 PM</td>
+                </tr>
+                <tr>
+                    <td>SRV-05</td>
+                    <td>Climbing</td>
+                    <td>Top-Roping Day</td>
+                    <td>1 day</td>
+                    <td>$400.00</td>
+                    <td>8 hours</td>
+                    <td>9 AM - 5 PM</td>
+                </tr>
+                <tr>
+                    <td>SRV-06</td>
+                    <td>Climbing</td>
+                    <td>Top-Roping - Belaying</td>
+                    <td>3 days</td>
+                    <td>$1200.00</td>
+                    <td>8 hours per day</td>
+                    <td>9 AM - 5 PM</td>
+                </tr>
+                <tr>
+                    <td>SRV-07</td>
+                    <td>Climbing</td>
+                    <td>Rappelling - Self Rescue</td>
+                    <td>2 days</td>
+                    <td>$800.00</td>
+                    <td>16 hours total</td>
+                    <td>9 AM - 5 PM</td>
+                </tr>
+                <tr>
+                    <td>SRV-08</td>
+                    <td>Climbing</td>
+                    <td>Lead Climbing</td>
+                    <td>2 days</td>
+                    <td>$1200.00</td>
+                    <td>16 hours total</td>
+                    <td>9 AM - 5 PM</td>
+                </tr>
+        </tbody>
+    </table>
+
+    <script id="services-xml" type="text/xml">
+        <?xml version="1.0" encoding="UTF-8"?>
+        <schedule>
+            <services>
+                <SRVID>SRV-01</SRVID>
+                <Service>Backpacking</Service>
+                <Description>Weekend Backpacking Trip</Description>
+                <Duration>3 days</Duration>
+                <Cost>$750.00</Cost>
+                <Departs>Fri - Noon - Returns Sun</Departs>
+                <Details>Backpacking trip from Mapleton Depot to the Martins Gap via the Standing Stone Trail. Includes all meals.</Details>
+            </services>
+            <services>
+                <SRVID>SRV-02</SRVID>
+                <Service>Backpacking</Service>
+                <Description>Week - Backpacking Trip</Description>
+                <Duration>7 days</Duration>
+                <Cost>$1400.00</Cost>
+                <Departs>Sunday - Return Saturday</Departs>
+                <Details>5 day backpacking trip from Cowans Gap State Park to Greenwood Furnace State Park via the Standing Stone Trail. Includes all meals.</Details>
+            </services>
+            <services>
+                <SRVID>SRV-03</SRVID>
+                <Service>Backpacking</Service>
+                <Description>Backpacking Trek</Description>
+                <Duration>14 days</Duration>
+                <Cost>$2800.00</Cost>
+                <Departs>Sunday - Return Saturday</Departs>
+                <Details>14 day backpacking trip from Michaux State Forest, PA to Cascade, MD</Details>
+            </services>
+            <services>
+                <SRVID>SRV-04</SRVID>
+                <Service>Climbing</Service>
+                <Description>Bouldering</Description>
+                <Duration>1 day</Duration>
+                <Cost>$200.00</Cost>
+                <Departs>5 hours</Departs>
+                <Details>Pulpit Rocks, Huntingdon 1 PM - 6 PM</Details>
+            </services>
+            <services>
+                <SRVID>SRV-05</SRVID>
+                <Service>Climbing</Service>
+                <Description>Top-Roping Day</Description>
+                <Duration>1 day</Duration>
+                <Cost>$400.00</Cost>
+                <Departs>8 hours</Departs>
+                <Details>9 AM - 5 PM</Details>
+            </services>
+            <services>
+                <SRVID>SRV-06</SRVID>
+                <Service>Climbing</Service>
+                <Description>Top-Roping - Belaying</Description>
+                <Duration>3 days</Duration>
+                <Cost>$1200.00</Cost>
+                <Departs>8 hours per day</Departs>
+                <Details>9 AM - 5 PM</Details>
+            </services>
+            <services>
+                <SRVID>SRV-07</SRVID>
+                <Service>Climbing</Service>
+                <Description>Rappelling - Self Rescue</Description>
+                <Duration>2 days</Duration>
+                <Cost>$800.00</Cost>
+                <Departs>16 hours total</Departs>
+                <Details>9 AM - 5 PM</Details>
+            </services>
+            <services>
+                <SRVID>SRV-08</SRVID>
+                <Service>Climbing</Service>
+                <Description>Lead Climbing</Description>
+                <Duration>2 days</Duration>
+                <Cost>$1200.00</Cost>
+                <Departs>16 hours total</Departs>
+                <Details>9 AM - 5 PM</Details>
+            </services>
+        </schedule>
+    </script>
+
+</body>
+</html>
+
     <script>
         function loadDoc() {
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    myFunction(this);
-                }
-            };
-            xhttp.open("GET", "schedule.xml", true);
-            xhttp.send();
-        }
+         
+            var xmlData = document.getElementById("services-xml").textContent;
+        
+            var parser = new DOMParser();
+            var xmlDoc = parser.parseFromString(xmlData, "application/xml");
 
-        function myFunction(xml) {
-            var i;
-            var xmlDoc = xml.responseXML;
             var divcols = '<div class="row">';
             divcols += '   <div class="col-md-2"><b>SRVID</b></div>';
             divcols += '   <div class="col-md-2"><b>Service</b></div>';
@@ -39,30 +238,30 @@
             divcols += '   <div class="col-md-2"><b>Details</b></div>';
             divcols += '</div>';
 
-            var x = xmlDoc.getElementsByTagName("services");
-            for (i = 0; i < x.length; i++) {
+            var services = xmlDoc.getElementsByTagName("services");
+            for (var i = 0; i < services.length; i++) {
                 divcols += '<div class="row">';
-                divcols += '<div class="col-md-2">' + x[i].getElementsByTagName("SRVID")[0].childNodes[0].nodeValue + '</div>';
-                divcols += '<div class="col-md-2">' + x[i].getElementsByTagName("Service")[0].childNodes[0].nodeValue + '</div>';
-                divcols += '<div class="col-md-2">' + x[i].getElementsByTagName("Description")[0].childNodes[0].nodeValue + '</div>';
-                divcols += '<div class="col-md-1">' + x[i].getElementsByTagName("Duration")[0].childNodes[0].nodeValue + '</div>';
-                divcols += '<div class="col-md-1">' + x[i].getElementsByTagName("Cost")[0].childNodes[0].nodeValue + '</div>';
-                divcols += '<div class="col-md-2">' + x[i].getElementsByTagName("Departs")[0].childNodes[0].nodeValue + '</div>';
-                divcols += '<div class="col-md-2">' + x[i].getElementsByTagName("Details")[0].childNodes[0].nodeValue + '</div>';
+                divcols += '<div class="col-md-2">' + services[i].getElementsByTagName("SRVID")[0].childNodes[0].nodeValue + '</div>';
+                divcols += '<div class="col-md-2">' + services[i].getElementsByTagName("Service")[0].childNodes[0].nodeValue + '</div>';
+                divcols += '<div class="col-md-2">' + services[i].getElementsByTagName("Description")[0].childNodes[0].nodeValue + '</div>';
+                divcols += '<div class="col-md-1">' + services[i].getElementsByTagName("Duration")[0].childNodes[0].nodeValue + '</div>';
+                divcols += '<div class="col-md-1">' + services[i].getElementsByTagName("Cost")[0].childNodes[0].nodeValue + '</div>';
+                divcols += '<div class="col-md-2">' + services[i].getElementsByTagName("Departs")[0].childNodes[0].nodeValue + '</div>';
+                divcols += '<div class="col-md-2">' + services[i].getElementsByTagName("Details")[0].childNodes[0].nodeValue + '</div>';
                 divcols += '</div>';
             }
+
             document.getElementById("mycontainer").innerHTML = divcols;
         }
     </script>
+
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsABShyXefaltWPVDfZ2ZDbcNafCN2dg4kJA&s" alt="Image Baseline">
+                <img src="cross-ref.png" alt="Image Baseline">
             </div>
         </div>
         <div id="mycontainer"></div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-</body>
-</html>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9
