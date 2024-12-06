@@ -5,30 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customer Showcase</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: burlywood;
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+        }
+        header {
+            text-align: center;
+            padding: 2rem;
+            background-color: #333;
+        }
+        h1 {
+            margin: 0;
+        }
+        .row div {
+            padding: 0.5rem;
+            border: 1px solid white;
+        }
+        .row {
+            margin-bottom: 0.5rem;
+        }
+        nav {
+            background-color: #333;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .card {
+            background-color: #444;
+            border: 1px solid white;
+            color: white;
+        }
+        .card img {
+            border-bottom: 1px solid white;
+        }
+        .form-control {
+            background-color: #555;
+            border: 1px solid white;
+            color: white;
+        }
+        .form-group label {
+            color: white;
+        }
+        .btn-primary {
+            background-color: #333;
+            border-color: white;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Customer Showcase</h1>
+    </header>
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
-        <a href="Services.html">Services</a>
-        <a href="Customer.html">Customer Reviews</a>
+        <a href="services.html">Services</a>
+        <a href="customer.html">Customer Reviews</a>
         <a href="catalog.html">Store Catalog</a>
     </nav>
     <div class="container mt-4">
-        <div class="card">
-            <img src="https://github.com/j-shmunk/IT-105-Web-Project-fr-/blob/main/rrg.png" class="card-img-top" alt="Adventure Photo">
-            <div class="card-body">
-                <h5 class="card-title">Red River Gorge</h5>
-                <h6 class="card-subtitle mb-2 text-muted">June 14, 2023</h6>
-                <p class="card-text">Premier sport climbing area in eastern Kentucky.</p>
-                <blockquote class="blockquote">
-                    <p class="mb-0">Fantastic</p>
-                    <footer class="blockquote-footer">Marie</footer>
-                </blockquote>
-            </div>
-        </div>
+        <div id="customer-cards" class="row"></div>
 
-        <form class="mt-4">
+        <form id="feedback-form" class="mt-4">
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" class="form-control" id="name" placeholder="Enter your name">
@@ -52,5 +100,89 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        const customers = [
+            {
+                "adventurename":"Seneca Rocks",
+                "adventuredate":"July 14, 2024",
+                "adventurephoto":"seneca.png",
+                "customername":"Denver",
+                "customerquote":"Amazing",
+                "excurstionstmt":"Very cool",
+                "descriptionfile":"Seneca Rocks provides climbers a wide array of sport and traditional climbs."
+            },
+            {
+                "adventurename":"Red River Gorge",
+                "adventuredate":"June 14, 2023",
+                "adventurephoto":"rrg.png",
+                "customername":"Marie",
+                "customerquote":"Fantastic",
+                "excurstionstmt":"Beautiful trip",
+                "descriptionfile":"Premier sport climbing area in eastern Kentucky."
+            },
+            {
+                "adventurename":"New River Gorge",
+                "adventuredate":"August 14, 2024",
+                "adventurephoto":"newrg.png",
+                "customername":"Jon",
+                "customerquote":"Righteous",
+                "excurstionstmt":"Wild and Wonderful",
+                "descriptionfile":"Southern West Virginia haven for white water rafters and climbers. Wide array of bolted sport climbs."
+            },
+            {
+                "adventurename":"Shawangunk",
+                "adventuredate":"September 14, 2024",
+                "adventurephoto":"gunks.png",
+                "customername":"Frank",
+                "customerquote":"Whoa",
+                "excurstionstmt":"Epic trip",
+                "descriptionfile":"Finest climbing in southern New York. Enjoy the New Paltz area - history and local shops."
+            }
+        ];
+
+        function displayCustomerCards() {
+            const container = document.getElementById('customer-cards');
+            customers.forEach(customer => {
+                const card = `
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="${customer.adventurephoto}" class="card-img-top" alt="Adventure Photo">
+                            <div class="card-body">
+                                <h5 class="card-title">${customer.adventurename}</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">${customer.adventuredate}</h6>
+                                <p class="card-text">${customer.descriptionfile}</p>
+                                <blockquote class="blockquote">
+                                    <p class="mb-0">${customer.customerquote}</p>
+                                    <footer class="blockquote-footer">${customer.customername}</footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                container.innerHTML += card;
+            });
+        }
+
+        function handleFormSubmission(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const info = document.getElementById('info').value;
+            const feedback = document.getElementById('feedback').value;
+
+            const result = `
+                <h4>Feedback Received:</h4>
+                <p><strong>Name:</strong> ${name}</p>
+                <p><strong>Email:</strong> ${email}</p>
+                <p><strong>More Information:</strong> ${info}</p>
+                <p><strong>Feedback:</strong> ${feedback}</p>
+            `;
+            document.getElementById('results').innerHTML = result;
+        }
+
+        document.addEventListener('DOMContentLoaded', displayCustomerCards);
+
+        document.getElementById('feedback-form').addEventListener('submit', handleFormSubmission);
+    </script>
 </body>
 </html>
